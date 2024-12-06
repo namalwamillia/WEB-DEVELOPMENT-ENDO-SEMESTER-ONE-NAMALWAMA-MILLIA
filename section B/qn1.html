@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-container {
+    display: grid;
+    gap: 16px; /* Space between cards */
+    padding: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .card {
+    background-color: #e48989;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <h2>Card 1</h2>
+      <p>This is  my first card</p>
+    </div>
+    <div class="card">
+      <h2>Card 2</h2>
+      <p>This is my second card.</p>
+    </div>
+    <div class="card">
+      <h2>Card 3</h2>
+      <p>This my third card.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: lightskyblue;
+            padding: 20px;
+        }
+
+        .main-content {
+            background-color: #2fec9d;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+            }
+
+            .sidebar, .main-content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>.This is my side bar</p>
+        </div>
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <p>This is my main bar</p>
+        </div>
+    </div>
+</body>
+</html>
